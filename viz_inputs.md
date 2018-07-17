@@ -1,6 +1,6 @@
 # Visualizer Input Data Contract
 
-The following files specify the input data contract for the visualizer.  There are additional inputs to the visualizer, but these do not typically change between scenarios (such as zone polygons).
+The following files specify the input data contract for the visualizer.  There are additional inputs to the visualizer, such as zone polygons, but these do not typically change between scenarios.
 
   - BENEFITS_FILE - a CSV file with each row a benefit measure and columns for Processor, Target, Description, each COC, Everybody.  See `aggregate_results.csv`.
   
