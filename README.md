@@ -9,7 +9,7 @@ Components in the Data Pipeline
   - Inputs - a set of inputs to run the full data pipleine from start to finish
   - [Demand](https://github.com/MetroModelingServices/tdm) - R-based demand model
   - Supply - EMME-based supply/network model - **coming soon**
-  - [MCE](https://github.com/MetroModelingServices/mce) - Python-based multi-criterion evaluation toolkit
+  - [MCE](https://github.com/MetroModelingServices/metro_mce) - Python-based multi-criterion evaluation toolkit
   - [Visualizer](https://github.com/MetroModelingServices/mceviz) - Web-based MCE visualizer
   
 Data Contracts between Components
