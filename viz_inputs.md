@@ -2,7 +2,7 @@
 
 The following files specify the input data contract for the visualizer:
 
-  - BENEFITS_FILE - a CSV file of benefit measures by Processor, Target, Description, each COC, Everybody.  See `aggregate_results.csv`.
+  - BENEFITS_FILE - a CSV file with each row a benefit measure and columns for Processor, Target, Description, each COC, Everybody.  See `aggregate_results.csv`.
   
 | Processor              | Target                     | Description                    | coc_ext_lowengpro | coc_ext_age18or65 | everybody    |
 |------------------------|----------------------------|--------------------------------|-------------------|-------------------|--------------|
@@ -21,7 +21,7 @@ The following files specify the input data contract for the visualizer:
 | -0.426769676       | 1073.827903        | 910.1136113        | 654.2042721        | 781.1778018        | 127664.4209          | 166.3176037         | -12.02121191       | 131237.6141            |
 | -28.22580526       | 2124.205518        | 1786.018884        | 1175.625051        | 1679.898238        | 511470.8777          | 334.2504754         | -31.6707784        | 518510.9793            |
   
-  - COUNTIES_COC_FILE - a CSV file with each zone as a row and a column for membership in each COC + county name.  See `cocs.csv`
+  - COUNTIES_COC_FILE - a CSV file with each zone as a row (in order) and a column for membership in each COC + a county name column.  See `cocs.csv`
   
 | lowengpro_zone | age18or65_zone | County    |
 |----------------|----------------|-----------|
