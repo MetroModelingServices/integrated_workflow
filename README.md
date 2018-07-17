@@ -6,7 +6,7 @@ Specifications for the Full Integrated Modeling Workflow From Start to Finish
 ![integrated_workflow.JPG](integrated_workflow.JPG)
 
 Components in the Data Pipeline
-  - Inputs - a set of inputs required to run the full set of tools from start to finish
+  - Inputs - a set of inputs to run the full data pipleine from start to finish
   - [Demand](https://github.com/MetroModelingServices/tdm) - R-based demand model
   - Supply - EMME-based supply/network model - **coming soon**
   - [MCE](https://github.com/MetroModelingServices/mce) - Python-based multi-criterion evaluation toolkit
