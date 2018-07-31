@@ -43,6 +43,7 @@ The following files specify the demand input data contract for the MCE tool. All
             - hc: home-based college
             - nhnw: non-home non-work
             - nhw:  non-home work
+            - sch:  K-12 school
 
           *mode*
             - da: drive alone (SOV)
