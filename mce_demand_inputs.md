@@ -25,13 +25,13 @@ The following files specify the demand input data contract for the MCE tool. All
         mf.trfare.mhi:  transit fares for medium and high income groups
         mf.trfare.li:   transit fares for low income groups
 
-  - mce_input_dest_choice_<trip purpose>.omx - Contains destination choice logsums vectors for each <trip purpose> (ho, hr, hs, hw, hc, nhnw, nhw, sch). Vectors are ordered by income group (where applicable)
+  - mce_input_dest_choice_*trip purpose*.omx - Contains destination choice logsums vectors for each <trip purpose> (ho, hr, hs, hw, hc, nhnw, nhw, sch). Vectors are ordered by income group (where applicable)
   
         ma.<trip purpose>ldcls:  low income destination choice logsums
         ma.<trip purpose>mdcls:  medium income destination choice logsums
         ma.<trip purpose>hdcls:  high income destination choice logsums
 
-  - mce_input_mode_choice_pa_<trip purpose>.omx - Contains mode choice production-to-attraction matrices for each <trip purpose> (ho, hr, hs, hw, hc, nhnw, nhw, sch). Where applicable by trip purpose, matrices are ordered by mode (da, dp, pa, tr, prtr, bike, walk), time of day (pk, op), cval, and income group (l, m, h)
+  - mce_input_mode_choice_pa_*trip purpose*.omx - Contains mode choice production-to-attraction matrices for each <trip purpose> (ho, hr, hs, hw, hc, nhnw, nhw, sch). Where applicable by trip purpose, matrices are ordered by mode (da, dp, pa, tr, prtr, bike, walk), time of day (pk, op), cval, and income group (l, m, h)
   
         ma.<trip purpose>ldcls:  low income destination choice logsums
         ma.<trip purpose>mdcls:  medium income destination choice logsums
