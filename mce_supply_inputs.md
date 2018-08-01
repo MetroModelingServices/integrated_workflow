@@ -24,4 +24,21 @@ Run the following command in a Cygwin bash shell:
 This script exports Emme network link attributes and all OMX matrices (Emme derived). 
 
 **ITHIM**
-Requires tdist, wdist, and PA walk/bike OMX matrices from demand model. Runs via R script mce_ithim.R
+Requires tdist, wdist, and PA walk/bike OMX matrices from demand model. Run the following command in a Cygwin bash shell
+
+
+  ```
+  mce_ithim.R
+  ```
+To run the ITHIM R active transportation benefit calculator, configure the following settings at the top of the script:
+  - projectDirectory_base = "data/base-data"
+  - projectDirectory_build = "data/build-data"
+  - projectDirectory_run = "data/run/ithimR"
+  - GBDFileForITHIM = "burden.portland.csv"
+  - PopulationFileForITHIM = "F.portland.csv"
+  - WALK_SPEED = 3
+  - BIKE_SPEED = 10
+  - AVG_HH_SIZE = 2.4
+  - DOLLARS_PER_DALY = 80000
+
+The script will write out the dalys.csv output file with three columns - coc, dalys, and dollars.
