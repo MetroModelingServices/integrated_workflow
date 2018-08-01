@@ -5,23 +5,23 @@ Run the following script in a Cygwin bash shell on the final assignment emmebank
   ```
   python mce_reliability_prep.py
   ```
-This command creates link attributes needed to calculate @relvar. Cross-check with settings.yaml file that all extra attributes have been populated on the network after running python script. The extra attribute @ctype is assummed to be copied from a prior scenario.
+This script creates and populates link attributes needed to calculate @relvar. Cross-check these attributes with settings.yaml file so that all extra attributes have been populated on the network after running. The extra attribute @ctype is assummed to be copied from a prior scenario.
 
-Next, run Emme macro skim assignment:
+Next, run Emme to skim @relvar:
   ```
   auto_skims_MCE.mac
   ```
-Resulting skims will hold the travel time variance. The square root of these skims is used in the benefits calculator to arrive at the standard deviation (reliability) of travel time. 
+Resulting skims (pm2 and midday) will hold the travel time variance matrices. The square root of these matrices is used in the benefits calculator to arrive at the standard deviation (i.e. reliability) of travel time. 
 
 **Emme modeller python script to export OMX matrices and extract link attribute data:**
-Requires New_Project.emp files created at reliability ./skims and final assignment ./assign directories. 
+Requires New_Project.emp files created at final assignment ./assign and new reliability ./skims directories. 
 
 Run the following command in a Cygwin bash shell:
 
   ```
   bca_Emme_Export.bat
   ```
-This script exports Emme network link attributes and all OMX matrices (Emme derived). 
+This script exports Emme network link attributes and needed OMX matrices (Emme derived). 
 
 **ITHIM:**
 Uses tdist, wdist, and PA walk/bike OMX matrices from demand model.
