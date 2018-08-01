@@ -1,6 +1,17 @@
 # MCE Supply Input Data Contract
 
-**Emme modeller python script to calculate supply network reliability:** (a) run mce_reliability_prep.py on final assignment networks to create link attributes needed to calculate @relvar (b) skim @relvar via auto_skims_MCE.mac with existing volume-delay functions. Cross-check with settings.yaml file that all extra attributes have been populated on the network after running python script. This skim will hold the travel time variance. The square root of the skim is used in the benefits calculator to arrive at the standard deviation (reliability) of travel time. The extra attribute @ctype is assummed to be copied from a prior scenario.
+**Emme modeller python script to calculate supply network reliability:** 
+Run the following script on the final assignment emmebank scenario's (pm2 and midday):
+  ```
+  python mce_reliability_prep.py
+  ```
+This command creates link attributes needed to calculate @relvar. Cross-check with settings.yaml file that all extra attributes have been populated on the network after running python script. The extra attribute @ctype is assummed to be copied from a prior scenario.
+
+Next, run Emme macro skim assignment:
+ ```
+  auto_skims_MCE.mac
+  ```
+Resulting skims will hold the travel time variance. The square root of these skims is used in the benefits calculator to arrive at the standard deviation (reliability) of travel time. 
 
 **Emme modeller python script to export OMX matrices and extract link attribute data:**
 (a) Requires New_Project.emp files created at reliability ./skims and final assignment ./assign directories. Run bca_Emme_Export.py script to export Emme network link attributes and all OMX matrices (Emme-derived). 
