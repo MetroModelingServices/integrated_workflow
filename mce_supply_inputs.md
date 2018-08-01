@@ -14,7 +14,9 @@ Next, run Emme macro skim assignment:
 Resulting skims will hold the travel time variance. The square root of these skims is used in the benefits calculator to arrive at the standard deviation (reliability) of travel time. 
 
 **Emme modeller python script to export OMX matrices and extract link attribute data:**
-(a) Requires New_Project.emp files created at reliability ./skims and final assignment ./assign directories. Runs the following command in a Cygwin bash shell
+(a) Requires New_Project.emp files created at reliability ./skims and final assignment ./assign directories. 
+
+Run the following command in a Cygwin bash shell
 
   ```
   bca_Emme_Export.bat
