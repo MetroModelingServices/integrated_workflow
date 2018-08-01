@@ -17,7 +17,7 @@ Resulting skims will hold the travel time variance. The square root of these ski
 (a) Requires New_Project.emp files created at reliability ./skims and final assignment ./assign directories. Runs the following command in a Cygwin bash shell
 
   ```
-   bca_Emme_Export.bat
+  bca_Emme_Export.bat
   ```
 This script exports Emme network link attributes and all OMX matrices (Emme derived). 
 
