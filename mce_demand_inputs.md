@@ -2,15 +2,37 @@
 
 The following files specify the demand input data contract for the MCE tool. All input data are in OMX format and located in the ./\_mceInputs/ subdirectory for each alternative.
  
+ - mce_input_productions_*trip purpose*.omx - Contains productions-by-zone matrices for each <trip purpose> (ho, hr, hs, hw, hc, nhnw, nhw, sch). Where applicable by trip purpose, matrices are ordered by mode income group (l, m, h). For trip purposes with all of these market segmentations (ho, hr, hs, hw, hc), the files included in each OMX are as follow (nhnw, nhw, and sch are not income specific):
+  
+        mf.<trip purpose><income group>
+        
+        *trip purpose*
+            - ho: home-based other
+            - hr: home-based recreation
+            - hs: home-based shop
+            - hw: home-based work
+            - hc: home-based college
+            - nhnw: non-home non-work
+            - nhw:  non-home work
+            - sch:  K-12 school
+            
+        *income group*          
+            - l: low income
+            - m: medium income
+            - h: high income
+  
   - mce_input_cval.omx - Contains mf.cval (car ownership and workers by HIA) matrix. CVAL is defined as follows:
         
         mf.cval column order, by hia (listed as c <# cars> w <# workers>)
         - CVAL0 (mf.cval[,1:256]):     # of Household Cars = 0
           c0w0, c0w1, c0w2, c0w3,
+        
         - CVAL1 (mf.cval[,257:448]):   # of Household Cars < # of Household Workers
           c1w2, c1w3, c2w3
+        
         - CVAL2 (mf.cval[,449:640]):   # of Household Cars = # of Household Workers
           c1w1, c2w2, c3w3 
+        
         - CVAL3 (mf.cval[,641:1024]):  # of Household Cars > # of Household Workers
           c1w0, c2w0, c2w1, c3w0, c3w1, c3w2
    
