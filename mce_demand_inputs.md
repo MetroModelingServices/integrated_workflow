@@ -2,9 +2,9 @@
 
 The following files specify the demand input data contract for the MCE tool. All input data are in OMX format and located in the ./\_mceInputs/ subdirectory for each alternative.
  
- - mce_input_productions_*trip purpose*.omx - Contains productions-by-zone matrices for each <trip purpose> (ho, hr, hs, hw, hc, nhnw, nhw, sch). Where applicable by trip purpose, matrices are ordered by mode income group (l, m, h). For trip purposes with all of these market segmentations (ho, hr, hs, hw, hc), the files included in each OMX are as follow (nhnw, nhw, and sch are not income specific):
+ - mce_input_productions_*trip purpose*.omx - Contains productions-by-zone vectors for each <trip purpose> (ho, hr, hs, hw, hc, nhnw, nhw, sch). Where applicable by trip purpose, matrices are ordered by mode income group (l, m, h). For trip purposes with all of these market segmentations (ho, hr, hs, hw, hc), the files included in each OMX are as follow (nhnw, nhw, and sch are not income specific):
   
-        mf.<trip purpose>pr<income group> (example: mf.hwprl)
+        ma.<trip purpose>pr<income group> (example: ma.hwprl)
         
         *trip purpose*
             - ho: home-based other
