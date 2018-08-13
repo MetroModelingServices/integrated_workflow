@@ -99,8 +99,8 @@ The following files specify the supply input data contract for the MCE tool. All
         @updist:             
         @urbrur:             
         @waterf:             
-        @zone:               
-        additional_volume:   
+        @zone:               transporation analysis zone associated with link
+        additional_volume:   not used
         auto_time:           assigned travel time
         auto_volume:         assigned volume (passenger car equivalents)
         aux_transit_volume:  not used
