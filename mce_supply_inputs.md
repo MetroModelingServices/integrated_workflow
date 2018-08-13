@@ -57,36 +57,36 @@ The following files specify the supply input data contract for the MCE tool. All
         @cap:                hourly capacity
         @centerturn:         indicates presence of center turn lane (1)
         @divhwy:             indicates if link represents a divided highway (1)
-        @dwdist:             
+        @dwdist:             downstream interchange distance (for calculating @relvar)
         @fwcap:              capacity of freeway link
         @htkad:              additional travel time used by heavy trucks in assignment
         @htvol:              assigned volume of heavy trucks (passenger car equivalents)
         @hvol:               assigned volume of High Occupancy Vehicles (2+ persons)
-        @lanes2:             
-        @lanes3:             
-        @lanes4:             
-        @losc:               
-        @loscart:            
-        @losd:               
-        @lose:               
-        @losfh:              
-        @losfl:              
-        @losflart:           
+        @lanes2:             lanes = 2
+        @lanes3:             lane = 3
+        @lanes4:             lanes = 4
+        @losc:               LOS C+
+        @loscart:            LOS C+ arterial
+        @losd:               LOS D+
+        @lose:               LOS E+
+        @losfh:              LOS F high +
+        @losfl:              LOS F low +
+        @losflart:           LOS F low + arterial
         @mb:                 mid-block capacity of link
         @mdrmp:              midday hourly ramp meter rate
         @mpa:                link is located within Metropolitan Planning Area boundary (1)
         @mtkad:              additional travel time used by heavy trucks in assignment
         @mtvol:              assigned volume of heavy trucks (passenger car equivalents)
-        @noisef:             
+        @noisef:             noise benfefit
         @pmrmp:              PM hourly ramp meter rate
-        @relvar:             
+        @relvar:             reliability travel time variance
         @signal:             indicates presence of signal control at j-node (1)
-        @spd35:              
-        @spd40:              
-        @spd45:              
-        @spd50:              
-        @spd50p:             
-        @spd70:              
+        @spd35:              speed 35
+        @spd40:              speed 40
+        @spd45:              speed 45
+        @spd50:              speed 50
+        @spd50p:             speed 50+
+        @spd70:              speed 70
         @speed:              free flow travel speed 
         @stop:               indicates presence of signal control at j-node (1)
         @svol:               assigned volume of Single Occupancy Vehicles 
@@ -96,9 +96,9 @@ The following files specify the supply input data contract for the MCE tool. All
         @trkad:              additional travel time used by all trucks in assignment 
         @ttoll:              additional travel time equivalent for trucks of *toll* on link  
         @ul3:                approach capacity (capacity at intersection)
-        @updist:             
-        @urbrur:             
-        @waterf:             
+        @updist:             upstream interchange distance (for calculating @relvar)
+        @urbrur:             urban vs. rural geography used for safety benefit (uses @mpa as definition)
+        @waterf:             water quality benefit
         @zone:               transporation analysis zone associated with link
         additional_volume:   not used
         auto_time:           assigned travel time
