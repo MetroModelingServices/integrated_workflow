@@ -48,7 +48,69 @@ The following files specify the supply input data contract for the MCE tool. All
         mf.am2rls:  AM2 SOV O-D reliability skims
         mf.md1rls:  MD1 SOV O-D reliability skims
         
- - mce_input_links_PM2.csv - Contains a list of all links in the PM2 network and their attributes.
- - mce_input_links_MD1.csv - Contains a list of all links in the MD1 network and their attributes.
+ - mce_input_links_PM2.csv / mce_input_links_MD1.csv - Contains a list of all links in the PM2 or MD1 networks and their attributes. Attributes are defined as follows:
+
+        i:                   from-node ID
+        j:                   to-node ID
+        @amrmp:              AM hourly ramp meter rate
+        @barrier:            indicates presence of barrier (1)
+        @cap:                hourly capacity
+        @centerturn:         indicates presence of center turn lane (1)
+        @divhwy:             indicates if link represents a divided highway (1)
+        @dwdist:             
+        @fwcap:              capacity of freeway link
+        @htkad:              additional travel time used by heavy trucks in assignment
+        @htvol:              assigned volume of heavy trucks (passenger car equivalents)
+        @hvol:               assigned volume of High Occupancy Vehicles (2+ persons)
+        @lanes2:             
+        @lanes3:             
+        @lanes4:             
+        @losc:               
+        @loscart:            
+        @losd:               
+        @lose:               
+        @losfh:              
+        @losfl:              
+        @losflart:           
+        @mb:                 mid-block capacity of link
+        @mdrmp:              midday hourly ramp meter rate
+        @mpa:                link is located within Metropolitan Planning Area boundary (1)
+        @mtkad:              additional travel time used by heavy trucks in assignment
+        @mtvol:              assigned volume of heavy trucks (passenger car equivalents)
+        @noisef:             
+        @pmrmp:              PM hourly ramp meter rate
+        @relvar:             
+        @signal:             indicates presence of signal control at j-node (1)
+        @spd35:              
+        @spd40:              
+        @spd45:              
+        @spd50:              
+        @spd50p:             
+        @spd70:              
+        @speed:              free flow travel speed 
+        @stop:               indicates presence of signal control at j-node (1)
+        @svol:               assigned volume of Single Occupancy Vehicles 
+        @thrwy:              indicates whether link is part of RTP-defined regional *throughway* network (1)
+        @tknet:              indicates whether link is part of RTP-defined regional *freight* network (1) 
+        @tkpth:              additional *weight* for truck travel times used in assignments 
+        @trkad:              additional travel time used by all trucks in assignment 
+        @ttoll:              additional travel time equivalent for trucks of *toll* on link  
+        @ul3:                approach capacity (capacity at intersection)
+        @updist:             
+        @urbrur:             
+        @waterf:             
+        @zone:               
+        additional_volume:   
+        auto_time:           assigned travel time
+        auto_volume:         assigned volume (passenger car equivalents)
+        aux_transit_volume:  not used
+        data1:               user defined data field 1 (ul1)
+        data2:               user defined data field 2 (ul2)
+        data3:               user defined data field 3 (ul3)
+        length:              length in miles
+        num_lanes:           number of lanes
+        type:                facility type:  1 = transit-only, 2/3 = pedestrian-only 10 = freeways, 19 = HOV lane, 20 = highway,
+                                            30 = arterials and collectors, 70 = freeway off-ramp, 79 = freeway on-ramp
+        volume_delay_func:   volume delay function
  
   
