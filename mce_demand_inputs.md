@@ -1,6 +1,6 @@
 # MCE Demand Input Data Contract
 
-The following files specify the demand input data contract for the MCE tool. All input data are in OMX format and located in the ./\_mceInputs/ subdirectory for each alternative.
+The following files specify the demand input data contract for the MCE tool. All input data are in OMX or CSV format and located in the ./\_mceInputs/ subdirectory for each alternative.
  
  - mce_input_productions_*trip purpose*.omx - Contains productions-by-zone vectors for each <trip purpose> (ho, hr, hs, hw, hc, nhnw, nhw, sch). Where applicable by trip purpose, matrices are ordered by mode income group (l, m, h). For trip purposes with all of these market segmentations (ho, hr, hs, hw, hc), the files included in each OMX are as follow (nhnw, nhw, and sch are not income specific):
   
@@ -21,7 +21,7 @@ The following files specify the demand input data contract for the MCE tool. All
             - m: medium income
             - h: high income
   
-  - mce_input_cval.omx - Contains mf.cval (car ownership and workers by HIA) matrix. CVAL is defined as follows:
+  - mce_input_cval.csv - Contains car ownership and workers by HIA. File contains headers. CVAL is defined as follows:
         
         mf.cval column order, by hia (listed as c <# cars> w <# workers>)
         - CVAL0 (mf.cval[,1:256]):     # of Household Cars = 0
