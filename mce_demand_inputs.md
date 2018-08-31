@@ -17,7 +17,7 @@ The following files specify the demand input data contract for the MCE tool. All
             - <trip purpose>hpr:  high income productions
 
         Destination choice logsums for each <trip purpose> (ho, hr, hs, hw, hc, nhnw, nhw, sch). 
-        Vectors are ordered by income group (nhnw, nhw, and sch are not income specific)
+        Vectors are ordered by income group (nhnw, nhw, and sch are not income specific):
   
             - <trip purpose>ldcls:  low income destination choice logsums
             - <trip purpose>mdcls:  medium income destination choice logsums
@@ -37,11 +37,6 @@ The following files specify the demand input data contract for the MCE tool. All
         
         - CVAL3 (mf.cval[,641:1024]):  # of Household Cars > # of Household Workers
           c1w0, c2w0, c2w1, c3w0, c3w1, c3w2
-   
-  - mce_input_parking_costs.omx - Contains vectors of long-term and short-term parking costs by TAZ
-  
-        ma.ltpkg: long-term parking costs by TAZ
-        ma.stpkg: short-term parking costs by TAZ
    
   - mce_input_transit_fares.omx - Contains matrices of transit fares by income groups
   
