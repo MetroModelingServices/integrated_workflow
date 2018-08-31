@@ -110,7 +110,8 @@ The following files specify the supply input data contract for the MCE tool. All
         length:              length in miles
         num_lanes:           number of lanes
         type:                facility type:  1 = transit-only, 2/3 = pedestrian-only 10 = freeways, 19 = HOV lane, 20 = highway,
-                                            30 = arterials and collectors, 70 = freeway off-ramp, 79 = freeway on-ramp
+                                            30 = arterials and collectors, 70 = freeway off-ramp, 79 = freeway on-ramp,
+                                            999 = centroid connectors
         volume_delay_func:   volume delay function
  
   
