@@ -64,8 +64,8 @@ The following files specify the demand input data contract for the MCE tool. All
             - pa: passenger in HOV
             - tr: walk to transit
             - prtr: park-and-ride drive to transit trip (entire trip, production to/from attraction)
-              - prtrl: portion of pnr trip in auto, production to/from pnr lot
-              - prtrd: portion of pnr trip in transit, pnr lot to/from attraction  
+              - prtrtl: portion of pnr trip in auto, production to/from pnr lot
+              - prtrtd: portion of pnr trip in transit, pnr lot to/from attraction  
             - bike
             - walk
 
