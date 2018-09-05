@@ -42,9 +42,6 @@ The following files specify the supply input data contract for the MCE tool. All
         
         mf.mdivt:   MD1 total in-vehicle time (bus + lrt + heavy rail + streetcar + brt)
         
-        mf.pkdptr:  total peak period transit trips in O-D format. trips are adjusted to flow in PM peak direction. 6am-9am + 3pm-6pm
-        mf.opdptr:  total off-peak period transit trips in O-D format. trips are not adjusted. all other times of day
-        
         mf.am2rls:  AM2 SOV O-D reliability skims
         mf.md1rls:  MD1 SOV O-D reliability skims
         
