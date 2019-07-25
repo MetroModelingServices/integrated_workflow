@@ -4,48 +4,56 @@ The following files specify the supply input data contract for the MCE tool. The
  
  For each input, *time period* defines the hour of the assignment period. Format is <start + end hour>. Time periods are as follow:
    
-        0001 = 00:00 - 01:00 (midnight - 1am)
-        0102 = 01:00 - 02:00 (1am - 2am)
-        0203 = 02:00 - 03:00 (2am - 3am)
-        0304 = 03:00 - 04:00 (3am - 4am)
-        0405 = 04:00 - 05:00 (4am - 5am)
-        0506 = 05:00 - 06:00 (5am - 6am)
-        0607 = 06:00 - 07:00 (6am - 7am)
-        0708 = 07:00 - 08:00 (7am - 8am)
-        0809 = 08:00 - 09:00 (8am - 9am)
-        0910 = 09:00 - 10:00 (9am - 10am)
-        1011 = 10:00 - 11:00 (10am - 11am)
-        1112 = 11:00 - 12:00 (11am - 12pm)
-        1213 = 12:00 - 13:00 (12pm - 1pm)
-        1314 = 13:00 - 14:00 (1pm - 2pm)
-        1415 = 14:00 - 15:00 (2pm - 3pm)
-        1516 = 15:00 - 16:00 (3pm - 4pm)
-        1617 = 16:00 - 17:00 (4pm - 5pm)
-        1718 = 17:00 - 18:00 (5pm - 6pm)
-        1819 = 18:00 - 19:00 (6pm - 7pm)
-        1920 = 19:00 - 20:00 (7pm - 8pm)
-        2021 = 20:00 - 21:00 (8pm - 9pm)
-        2122 = 21:00 - 22:00 (9pm - 10pm)
-        2223 = 22:00 - 23:00 (10pm - 11pm)
-        2324 = 23:00 - midnight (11pm - midnight)
+        0001:  00:00 - 01:00 (midnight - 1am)
+        0102:  01:00 - 02:00 (1am - 2am)
+        0203:  02:00 - 03:00 (2am - 3am)
+        0304:  03:00 - 04:00 (3am - 4am)
+        0405:  04:00 - 05:00 (4am - 5am)
+        0506:  05:00 - 06:00 (5am - 6am)
+        0607:  06:00 - 07:00 (6am - 7am)
+        0708:  07:00 - 08:00 (7am - 8am)
+        0809:  08:00 - 09:00 (8am - 9am)
+        0910:  09:00 - 10:00 (9am - 10am)
+        1011:  10:00 - 11:00 (10am - 11am)
+        1112:  11:00 - 12:00 (11am - 12pm)
+        1213:  12:00 - 13:00 (12pm - 1pm)
+        1314:  13:00 - 14:00 (1pm - 2pm)
+        1415:  14:00 - 15:00 (2pm - 3pm)
+        1516:  15:00 - 16:00 (3pm - 4pm)
+        1617:  16:00 - 17:00 (4pm - 5pm)
+        1718:  17:00 - 18:00 (5pm - 6pm)
+        1819:  18:00 - 19:00 (6pm - 7pm)
+        1920:  19:00 - 20:00 (7pm - 8pm)
+        2021:  20:00 - 21:00 (8pm - 9pm)
+        2122:  21:00 - 22:00 (9pm - 10pm)
+        2223:  22:00 - 23:00 (10pm - 11pm)
+        2324:  23:00 - midnight (11pm - midnight)
  
  
  - mce_input_skims.omx - Contains all skim matrices for the alternative. A list of the matrices follows:
   
-        mf.pm2Hpe:  PM2 heavy truck O-D trips (PCEs)
-        mf.pm2Mpe:  PM2 medium truck O-D trips (PCEs)
-        mf.md1Hpe:  MD1 heavy truck O-D trips (PCEs)
-        mf.md1Mpe:  MD1 medium truck O-D trips (PCEs)
+
+        mf.<time period>sn:  <time period> sov O-D trips, example (mf.1718sn)
+        mf.<time period>hn:  <time period> hov O-D trips
+        mf.<time period>hp:  <time period> heavy truck O-D trips (PCEs)
+        mf.<time period>mp:  <time period> medium truck O-D trips (PCEs)
         
         mf.tdist:   shortest path auto distance between zones
         mf.wdist:   shortest path walk distance between zones
         
-        mf.am2stt:  AM2 SOV O-D travel times
-        mf.am2htt:  AM2 HOV O-D travel times
-        mf.md1stt:  MD1 SOV O-D travel times
-        mf.md1htt:  MD1 HOV O-D travel times
-        
+        mf.<time period>stn:  <time period> sov O-D travel times
+        mf.<time period>htn:  <time period> hov O-D travel times
+        mf.<time period>hptn: <time period> heavy truck O-D travel times
+        mf.<time period>mptn: <time period> medium truck O-D travel times
+
+        -if a scenario includes *pricing*, the following matrices will also be included
+        mf.<time period>stl:  <time period> sov O-D perceived travel times of any tolls associated with trip
+        mf.<time period>sti:  <time period> sov O-D perceived total travel times of trip (travel time + toll travel time)
+        mf.<time period>htl:  <time period> hov O-D perceived travel times of any tolls associated with trip
+        mf.<time period>hti:  <time period> hov O-D perceived total travel times of trip (travel time + toll travel time)  
+
         -all transit times are *perceived* (weighted)
+        ** this will be updated to 24-hr at a later time **
         mf.amwt1:   AM2 initial transit wait time
         mf.amwt2:   AM2 additional transit wait time
         mf.amwalk:  AM2 total tranist walk time
