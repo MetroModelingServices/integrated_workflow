@@ -2,7 +2,7 @@
 
 The following files specify the supply input data contract for the MCE tool. These inputs are specific to the 24 hour peak-spread assignments. All input data are OMX or CSV format and located in the ./\_mceInputs/ subdirectory for each alternative.
  
- For each input, <time period> defines the hour of the assignment period. Format is <start + end hour>. Time periods are as follow:
+ For each input, *time period* defines the hour of the assignment period. Format is <start + end hour>. Time periods are as follow:
    
         0001 = 00:00 - 01:00 (midnight - 1am)
         0102 = 01:00 - 02:00 (1am - 2am)
