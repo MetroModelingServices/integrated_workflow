@@ -80,7 +80,7 @@ The following files specify the supply input data contract for the MCE tool. The
         mf.mdivt:             MD1 total in-vehicle time (bus + lrt + heavy rail + streetcar + brt)
 
         
- - mce_input_links_<time period>.csv - Contains a list of all links and their attributes in time period specific networks. Attributes are defined as follows:
+ - mce_input_links_<*time period*>.csv - Contains a list of all links and their attributes in time period specific networks. Attributes are defined as follows:
 
         i:                   from-node ID
         j:                   to-node ID
