@@ -2,7 +2,7 @@
 
 The following files specify the supply input data contract for the MCE tool. These inputs are specific to the 24 hour peak-spread assignments. All input data are OMX or CSV format and located in the ./\_mceInputs/ subdirectory for each alternative.
  
- For each input, *time period* defines the hour of the assignment period. Format is <start + end hour>. Time periods are as follow:
+ For each input, <*time period*> defines the hour of the assignment period. Format is <start hour + end hour>. Time periods are as follow:
    
         0001:  00:00 - 01:00 (midnight - 1am)
         0102:  01:00 - 02:00 (1am - 2am)
@@ -32,55 +32,55 @@ The following files specify the supply input data contract for the MCE tool. The
  
  - mce_input_skims.omx - Contains all skim matrices for the alternative. A list of the matrices follows:
 
-        mf.<time period>sn:   <time period> sov O-D trips, example (mf.1718sn)
-        mf.<time period>hn:   <time period> hov O-D trips
-        mf.<time period>hp:   <time period> heavy truck O-D trips (PCEs)
-        mf.<time period>mp:   <time period> medium truck O-D trips (PCEs)
+        mf.<*time period*>sn:   <*time period*> sov O-D trips, example (mf.1718sn)
+        mf.<*time period*>hn:   <*time period*> hov O-D trips
+        mf.<*time period*>hp:   <*time period*> heavy truck O-D trips (PCEs)
+        mf.<*time period*>mp:   <*time period*> medium truck O-D trips (PCEs)
         
-        mf.<time period>stn:  <time period> sov O-D travel times
-        mf.<time period>htn:  <time period> hov O-D travel times
-        mf.<time period>hptn: <time period> heavy truck O-D travel times
-        mf.<time period>mptn: <time period> medium truck O-D travel times
+        mf.<*time period*>stn:  <*time period*> sov O-D travel times
+        mf.<*time period*>htn:  <*time period*> hov O-D travel times
+        mf.<*time period*>hptn: <*time period*> heavy truck O-D travel times
+        mf.<*time period*>mptn: <*time period*> medium truck O-D travel times
 
         -if a scenario includes *pricing*, the following matrices will also be included
-        mf.<time period>stl:  <time period> sov O-D perceived travel times of any tolls associated with trip
-        mf.<time period>sti:  <time period> sov O-D perceived total travel times of trip (travel time + toll travel time)
-        mf.<time period>htl:  <time period> hov O-D perceived travel times of any tolls associated with trip
-        mf.<time period>hti:  <time period> hov O-D perceived total travel times of trip (travel time + toll travel time)  
+        mf.<*time period*>stl:  <*time period*> sov O-D perceived travel times of any tolls associated with trip
+        mf.<*time period*>sti:  <*time period*> sov O-D perceived total travel times of trip (travel time + toll travel time)
+        mf.<*time period*>htl:  <*time period*> hov O-D perceived travel times of any tolls associated with trip
+        mf.<*time period*>hti:  <*time period*> hov O-D perceived total travel times of trip (travel time + toll travel time)  
     
-        mf.<time period>rls:  <time period> sov O-D reliability skims
+        mf.<*time period*>rls:  <time period> sov O-D reliability skims
    
-        mf.tdist:             shortest path auto distance between zones
-        mf.wdist:             shortest path walk distance between zones
+        mf.tdist:               shortest path auto distance between zones
+        mf.wdist:              shortest path walk distance between zones
 
         -all transit times are *perceived* (weighted)
         ** this will be updated to 24-hr at a later time **
-        mf.amwt1:             AM2 initial transit wait time
-        mf.amwt2:             AM2 additional transit wait time
-        mf.amwalk:            AM2 total tranist walk time
-        mf.amxfr:             AM2 total transfers (does not include initial boarding)
-        mf.amtbiv:            AM2 bus in-vehicle time
-        mf.amtliv:            AM2 lrt (MAX) in-vehicle time
-        mf.amtriv:            AM2 heavy rail (WES) in-vehicle time
-        mf.amtsciv:           AM2 streetcar in-vehicle time 
-        mf.amtbriv:           AM2 brt in-vehicle time
+        mf.amwt1:               AM2 initial transit wait time
+        mf.amwt2:               AM2 additional transit wait time
+        mf.amwalk:              AM2 total tranist walk time
+        mf.amxfr:               AM2 total transfers (does not include initial boarding)
+        mf.amtbiv:              AM2 bus in-vehicle time
+        mf.amtliv:              AM2 lrt (MAX) in-vehicle time
+        mf.amtriv:              AM2 heavy rail (WES) in-vehicle time
+        mf.amtsciv:             AM2 streetcar in-vehicle time 
+        mf.amtbriv:             AM2 brt in-vehicle time
         
-        mf.amivt:             AM2 total in-vehicle time (bus + lrt + heavy rail + streetcar + brt)
+        mf.amivt:               AM2 total in-vehicle time (bus + lrt + heavy rail + streetcar + brt)
         
-        mf.mdwt1:             MD1 initial transit wait time
-        mf.mdwt2:             MD1 additional transit wait time
-        mf.mdwalk:            MD1 total tranist walk time
-        mf.mdxfr:             MD1 total transfers (does not include initial boarding)
-        mf.mdtbiv:            MD1 bus in-vehicle time
-        mf.mdtliv:            MD1 lrt (MAX) in-vehicle time
-        mf.mdtriv:            MD1 heavy rail (WES) in-vehicle time
-        mf.mdtsciv:           MD1 streetcar in-vehicle time
-        mf.mdtbriv:           MD1 brt in-vehicle time
+        mf.mdwt1:               MD1 initial transit wait time
+        mf.mdwt2:               MD1 additional transit wait time
+        mf.mdwalk:              MD1 total tranist walk time
+        mf.mdxfr:               MD1 total transfers (does not include initial boarding)
+        mf.mdtbiv:              MD1 bus in-vehicle time
+        mf.mdtliv:              MD1 lrt (MAX) in-vehicle time
+        mf.mdtriv:              MD1 heavy rail (WES) in-vehicle time
+        mf.mdtsciv:             MD1 streetcar in-vehicle time
+        mf.mdtbriv:             MD1 brt in-vehicle time
         
-        mf.mdivt:             MD1 total in-vehicle time (bus + lrt + heavy rail + streetcar + brt)
+        mf.mdivt:               MD1 total in-vehicle time (bus + lrt + heavy rail + streetcar + brt)
 
         
- - mce_input_links_<*time period*>.csv - Contains a list of all links and their attributes in time period specific networks. Attributes are defined as follows:
+ - mce_input_links_<*time period*>.csv - Contains a list of all links and their attributes in <*time period*> specific networks. Attributes are defined as follows:
 
         i:                   from-node ID
         j:                   to-node ID
