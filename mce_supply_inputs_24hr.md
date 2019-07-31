@@ -37,9 +37,6 @@ The following files specify the supply input data contract for the MCE tool. The
         mf.<time period>hp:   <time period> heavy truck O-D trips (PCEs)
         mf.<time period>mp:   <time period> medium truck O-D trips (PCEs)
         
-        mf.tdist:             shortest path auto distance between zones
-        mf.wdist:             shortest path walk distance between zones
-        
         mf.<time period>stn:  <time period> sov O-D travel times
         mf.<time period>htn:  <time period> hov O-D travel times
         mf.<time period>hptn: <time period> heavy truck O-D travel times
@@ -52,6 +49,9 @@ The following files specify the supply input data contract for the MCE tool. The
         mf.<time period>hti:  <time period> hov O-D perceived total travel times of trip (travel time + toll travel time)  
     
         mf.<time period>rls:  <time period> sov O-D reliability skims
+   
+        mf.tdist:             shortest path auto distance between zones
+        mf.wdist:             shortest path walk distance between zones
 
         -all transit times are *perceived* (weighted)
         ** this will be updated to 24-hr at a later time **
@@ -80,7 +80,7 @@ The following files specify the supply input data contract for the MCE tool. The
         mf.mdivt:   MD1 total in-vehicle time (bus + lrt + heavy rail + streetcar + brt)
 
         
- - mce_input_links_PM2.csv / mce_input_links_MD1.csv - Contains a list of all links in the PM2 or MD1 networks and their attributes. Attributes are defined as follows:
+ - mce_input_links_<time period>.csv - Contains a list of all links and their attributes in time period specific networks. Attributes are defined as follows:
 
         i:                   from-node ID
         j:                   to-node ID
@@ -145,6 +145,3 @@ The following files specify the supply input data contract for the MCE tool. The
                                             30 = arterials and collectors, 70 = freeway off-ramp, 79 = freeway on-ramp,
                                            999 = centroid connectors
         volume_delay_func:   volume delay function
- 
-  
-
