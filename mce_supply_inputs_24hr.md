@@ -55,29 +55,29 @@ The following files specify the supply input data contract for the MCE tool. The
 
         -all transit times are *perceived* (weighted)
         ** this will be updated to 24-hr at a later time **
-        mf.amwt1:   AM2 initial transit wait time
-        mf.amwt2:   AM2 additional transit wait time
-        mf.amwalk:  AM2 total tranist walk time
-        mf.amxfr:   AM2 total transfers (does not include initial boarding)
-        mf.amtbiv:  AM2 bus in-vehicle time
-        mf.amtliv:  AM2 lrt (MAX) in-vehicle time
-        mf.amtriv:  AM2 heavy rail (WES) in-vehicle time
-        mf.amtsciv: AM2 streetcar in-vehicle time 
-        mf.amtbriv: AM2 brt in-vehicle time
+        mf.amwt1:             AM2 initial transit wait time
+        mf.amwt2:             AM2 additional transit wait time
+        mf.amwalk:            AM2 total tranist walk time
+        mf.amxfr:             AM2 total transfers (does not include initial boarding)
+        mf.amtbiv:            AM2 bus in-vehicle time
+        mf.amtliv:            AM2 lrt (MAX) in-vehicle time
+        mf.amtriv:            AM2 heavy rail (WES) in-vehicle time
+        mf.amtsciv:           AM2 streetcar in-vehicle time 
+        mf.amtbriv:           AM2 brt in-vehicle time
         
-        mf.amivt:   AM2 total in-vehicle time (bus + lrt + heavy rail + streetcar + brt)
+        mf.amivt:             AM2 total in-vehicle time (bus + lrt + heavy rail + streetcar + brt)
         
-        mf.mdwt1:   MD1 initial transit wait time
-        mf.mdwt2:   MD1 additional transit wait time
-        mf.mdwalk:  MD1 total tranist walk time
-        mf.mdxfr:   MD1 total transfers (does not include initial boarding)
-        mf.mdtbiv:  MD1 bus in-vehicle time
-        mf.mdtliv:  MD1 lrt (MAX) in-vehicle time
-        mf.mdtriv:  MD1 heavy rail (WES) in-vehicle time
-        mf.mdtsciv: MD1 streetcar in-vehicle time
-        mf.mdtbriv: MD1 brt in-vehicle time
+        mf.mdwt1:             MD1 initial transit wait time
+        mf.mdwt2:             MD1 additional transit wait time
+        mf.mdwalk:            MD1 total tranist walk time
+        mf.mdxfr:             MD1 total transfers (does not include initial boarding)
+        mf.mdtbiv:            MD1 bus in-vehicle time
+        mf.mdtliv:            MD1 lrt (MAX) in-vehicle time
+        mf.mdtriv:            MD1 heavy rail (WES) in-vehicle time
+        mf.mdtsciv:           MD1 streetcar in-vehicle time
+        mf.mdtbriv:           MD1 brt in-vehicle time
         
-        mf.mdivt:   MD1 total in-vehicle time (bus + lrt + heavy rail + streetcar + brt)
+        mf.mdivt:             MD1 total in-vehicle time (bus + lrt + heavy rail + streetcar + brt)
 
         
  - mce_input_links_<time period>.csv - Contains a list of all links and their attributes in time period specific networks. Attributes are defined as follows:
