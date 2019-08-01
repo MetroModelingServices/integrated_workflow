@@ -43,10 +43,10 @@ The following files specify the supply input data contract for the MCE tool. The
         mf.<*time period*>mptn: <*time period*> medium truck O-D travel times
 
         -if a scenario includes *pricing*, the following matrices will also be included
-        mf.<*time period*>stl:  <*time period*> sov O-D perceived travel times of any tolls associated with trip
-        mf.<*time period*>sti:  <*time period*> sov O-D perceived total travel times of trip (travel time + toll travel time)
-        mf.<*time period*>htl:  <*time period*> hov O-D perceived travel times of any tolls associated with trip
-        mf.<*time period*>hti:  <*time period*> hov O-D perceived total travel times of trip (travel time + toll travel time)  
+        mf.<*time period*>sln:  <*time period*> sov O-D perceived travel times of any tolls associated with trip
+        mf.<*time period*>sin:  <*time period*> sov O-D perceived total travel times of trip (travel time + toll travel time)
+        mf.<*time period*>hln:  <*time period*> hov O-D perceived travel times of any tolls associated with trip
+        mf.<*time period*>hin:  <*time period*> hov O-D perceived total travel times of trip (travel time + toll travel time)  
     
         mf.<*time period*>rls:  <time period> sov O-D reliability skims
    
