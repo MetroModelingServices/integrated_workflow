@@ -88,7 +88,7 @@ The following files specify the supply input data contract for the MCE tool. The
         @barrier:            indicates presence of barrier (1)
         @cap:                hourly capacity
         @centerturn:         indicates presence of center turn lane (1)
-        @divhwy:             indicates if link represents a divided highway (1)
+        @divhwy:             indicates if link represents a divided highway (1) -- SET TO ZERO FOR ALL LINKS
         @dwdist:             downstream interchange distance (for calculating @relvar)
         @fwcap:              capacity of freeway link
         @htkad:              additional travel time used by heavy trucks in assignment
@@ -106,10 +106,11 @@ The following files specify the supply input data contract for the MCE tool. The
         @losflart:           LOS F low + arterial
         @mb:                 mid-block capacity of link
         @mdrmp:              midday hourly ramp meter rate
-        @mpa:                link is located within Metropolitan Planning Area boundary (1)
+        @mpa:                link is located within Metropolitan Planning Area boundary (1) 
+                             determines urban vs. rural geography used for safety benefit
         @mtkad:              additional travel time used by heavy trucks in assignment
         @mtvol:              assigned volume of heavy trucks (passenger car equivalents)
-        @noisef:             noise benfefit
+        @noisef:             noise benfefit -- SET TO ZERO FOR ALL LINKS
         @pmrmp:              PM hourly ramp meter rate
         @relvar:             reliability travel time variance
         @signal:             indicates presence of signal control at j-node (1)
@@ -129,8 +130,7 @@ The following files specify the supply input data contract for the MCE tool. The
         @ttoll:              additional travel time equivalent for trucks of *toll* on link  
         @ul3:                approach capacity (capacity at intersection)
         @updist:             upstream interchange distance (for calculating @relvar)
-        @urbrur:             urban vs. rural geography used for safety benefit (uses @mpa as definition)
-        @waterf:             water quality benefit
+        @waterf:             water quality benefit -- SET TO ZERO FOR ALL LINKS
         @zone:               transporation analysis zone associated with link
         additional_volume:   not used
         auto_time:           assigned travel time
