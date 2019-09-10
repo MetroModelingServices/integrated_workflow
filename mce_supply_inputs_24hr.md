@@ -123,7 +123,6 @@ The following files specify the supply input data contract for the MCE tool. The
         @speed:              free flow travel speed 
         @stop:               indicates presence of signal control at j-node (1)
         @svol:               assigned volume of Single Occupancy Vehicles 
-        @thrwy:              indicates whether link is part of RTP-defined regional *throughway* network (1)
         @tknet:              indicates whether link is part of RTP-defined regional *freight* network (1) 
         @tkpth:              additional *weight* for truck travel times used in assignments 
         @trkad:              additional travel time used by all trucks in assignment 
